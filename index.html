@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Media queries and responsiveness</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    { margin:0;
+        padding:0;}
+        body{ 
+            background:hsl(0, 100%, 74%);
+            font-family: Poppins;
+            display: flex;
+        }
+        @media screen and (max-width:1200px) {
+    body{ 
+        background-color:hsl(154, 59%, 51%);
+        font-family: Poppins;
+        display: flex;
+    }
+}
+    @media screen and (max-width:900px) {
+        body{ 
+            background-color:hsl(248, 32%, 49%);
+            font-family: Poppins;
+            display: flex;
+        }
+    }
+    @media screen and (max-width:600px) {
+        body{ 
+            background-color:hsl(249, 10%, 26%) ;
+            font-family: Poppins;
+            display: flex;
+        }
+    }
+    @media screen and (max-width:320px) {
+        body{ 
+            background-color:hsl(246, 25%, 77%) ;
+            font-family: Poppins;
+            display: flex;
+        }
+    }
+    @media screen and (max-width:1000px) {
+        .wrap{ width: 50%;
+
+        }
+    }
+    @media screen and (max-width:600px) {
+        .wrap{ width: 100%;
+
+        }
+    }
+    
+     .wrap{
+            width:3; 
+            background: white;
+            padding: 40px 20px; 
+            box-sizing:border-box;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            transform:translate(-50%, -50%);
+        }
+        h1{
+            text-align:center;
+            color: white;
+            font-weight:400;
+            margin-bottom: 20px;
+            position: left;
+            display: flex;
+        }
+        input{
+            width: 100;
+            background: none;
+            border: 1px solid rgb(214, 202, 202);
+            border-radius: 3px;
+            padding: 6px 15px;
+            box-sizing: border-box;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        input[type="button"]{ background: hsl(154, 59%, 51%);
+            border: 0;
+            cursor: pointer;
+        }
+
+</style>
+<body>
+    
+    <div class="wrap">
+        <form>
+            <h1>Learn to code by watching others</h1>
+            <p> See how experienced developer slove problems in real-time. Watching scripted tutorials is great, but understanding how deveopers think is invalauable.</p>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last name">
+            <input type="email"placeholder="Email">
+            <input type="password" placeholder="password">
+            <input type="button" value="CLAIM YOUR FREE TRIAL">
+            </form>
+        </div>
+    </body>
+</html>
